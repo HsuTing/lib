@@ -1,10 +1,16 @@
-var csv_file_name = "../../city.csv";
+var csv_file_name = "../../project_2/city.csv";
+var key_word = [
+	'year',
+	'name',
+];
 
 d3.csv(csv_file_name, function(data) {
-	data = d3.nest()
-	  .key(function(d) { return d.year; })
-	  .key(function(d) { return d.name; })
-	  .entries(data);
+		data = d3.nest()
+
+		  for(item in key_word) {
+		    .key(function(d) { return d[ key_word[item] ]; })
+		  }
+		  .entries(data);
 
 	console.log(data);
 });
