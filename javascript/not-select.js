@@ -1,3 +1,3 @@
-document.onselectstart = function() {
+function not-select() {
 	return false;
 };

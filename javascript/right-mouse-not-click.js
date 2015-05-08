@@ -1,3 +1,3 @@
-document.oncontextmenu = function() {
-	window.event.returnValue=false;
+function right-mouse-not-click.js() {
+	window.event.returnValue = false;
 }

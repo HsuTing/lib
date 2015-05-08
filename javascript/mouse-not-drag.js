@@ -1,3 +1,3 @@
-document.ondragstart = function () {
+function mouse-not-drag() {
 	return false;
 };
