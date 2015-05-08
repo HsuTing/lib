@@ -11,7 +11,7 @@
 > Example
 
 ```
-	document.ondragstart = mouse-not-drag() {
+	document.ondragstart = mouse_not_drag() {
 		return false;
 	};
 ```
@@ -27,7 +27,7 @@
 > Example
 
 ```
-	document.onselectstart = not-select() {
+	document.onselectstart = not_select() {
 		return false;
 	};
 ```
@@ -43,7 +43,7 @@
 > Example
 
 ```
-	document.oncontextmenu = right-mouse-not-click() {
+	document.oncontextmenu = right_mouse-not_click() {
 		window.event.returnValue = false;
 	}
 ```

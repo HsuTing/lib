@@ -1,3 +1,3 @@
-function not-select() {
+function not_select() {
 	return false;
 };

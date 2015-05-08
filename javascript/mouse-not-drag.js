@@ -1,3 +1,3 @@
-function mouse-not-drag() {
+function mouse_not_drag() {
 	return false;
 };
