@@ -32,12 +32,14 @@
 
 ##d3-tip
 
+> Purpose
+
 ```
-	Purpose:
-
-		tip for d3.
-
-	Date:
-
-		2015.05.15			
+	tip for d3.
 ```
+
+> Date
+
+```
+	2015.05.15			
+````
