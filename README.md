@@ -30,7 +30,7 @@
 	jquery for mobile
 ```
 
-##d3_tip
+##d3-tip
 
 ```
 	Purpose:
