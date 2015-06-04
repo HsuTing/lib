@@ -6,7 +6,8 @@ var d3_tip = function() {
 	var element = [];
 
 	$("body")
-	  .prepend("<div class = 'tip'></div>");
+	  .prepend("<div class = 'd3-tip'></div>");
+	$(".d3-tip").hide();
 
 	//set text
 	this.html = function(d1, d2) {
@@ -36,7 +37,7 @@ var d3_tip = function() {
 		}
 
 		if(ty + $(".d3-tip").height() > $(window).height() - 50) {
-			ty = $(window).height() - $(".tip").height() - 50;
+			ty = $(window).height() - $(".d3-tip").height() - 50;
 		}
 	}
 
@@ -44,18 +45,14 @@ var d3_tip = function() {
 	this.show = function() {
 		$(".d3-tip").css({
 		  top: ty + "px",
-		  left: tx + "px",
-		  zIndex: 1,
-		  opacity: 1
+		  left: tx + "px"
 		});
+		$(".d3-tip").show();
 	}
 
 	//set hide
 	this.hide = function() {
-		$(".d3-tip").css({
-		  zIndex: -1,
-		  opacity: 0
-		});
+		$(".d3-tip").hide();
 	}
 
 	return this;
